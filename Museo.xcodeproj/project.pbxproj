@@ -15,7 +15,6 @@
 		1342D1AD23D8491E00C7802A /* Opera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1AC23D8491E00C7802A /* Opera.swift */; };
 		1342D1AF23D8495E00C7802A /* Quadro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1AE23D8495E00C7802A /* Quadro.swift */; };
 		1342D1B123D8496800C7802A /* Statua.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1B023D8496800C7802A /* Statua.swift */; };
-		1342D1B323D8540F00C7802A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1B223D8540F00C7802A /* TableViewController.swift */; };
 		1342D1B523D86B9E00C7802A /* gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D1B423D86B9E00C7802A /* gallery.json */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		1342D1AC23D8491E00C7802A /* Opera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opera.swift; sourceTree = "<group>"; };
 		1342D1AE23D8495E00C7802A /* Quadro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quadro.swift; sourceTree = "<group>"; };
 		1342D1B023D8496800C7802A /* Statua.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statua.swift; sourceTree = "<group>"; };
-		1342D1B223D8540F00C7802A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1342D1B423D86B9E00C7802A /* gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gallery.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +70,6 @@
 				1342D1A023D8479700C7802A /* Assets.xcassets */,
 				1342D1A223D8479700C7802A /* LaunchScreen.storyboard */,
 				1342D1A523D8479700C7802A /* Info.plist */,
-				1342D1B223D8540F00C7802A /* TableViewController.swift */,
 			);
 			path = Museo;
 			sourceTree = "<group>";
@@ -160,7 +157,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1342D1AD23D8491E00C7802A /* Opera.swift in Sources */,
-				1342D1B323D8540F00C7802A /* TableViewController.swift in Sources */,
 				1342D1B123D8496800C7802A /* Statua.swift in Sources */,
 				1342D19C23D8479600C7802A /* ViewController.swift in Sources */,
 				1342D19A23D8479600C7802A /* AppDelegate.swift in Sources */,
