@@ -1,0 +1,215 @@
+[{
+  "codice":"A0",
+  "titolo": "The Fall of Phaeton",
+  "autore": "Sir Peter Paul Rubens",
+  "immagine" : "A20624.jpg",
+  "tipo":"quadro",
+  "tecnica": "oil on canvas",
+  "dimensioni":"98.4 x 131.2 cm (38 3/4 x 51 5/8 in.) framed: 125.4 x 159.4 x 5.7 cm (49 3/8 x 62 3/4 x 2 1/4 in.)"
+},
+{
+  "codice":"A1",
+  "titolo": "Odilon Redon",
+  "autore": "Chester Dale Collection",
+  "immagine" : "sc001200.jpg",
+  "tipo":"quadro",
+  "tecnica": "oil on canvas",
+  "dimensioni":"143.5 x 62.9 cm (56 1/2 x 24 3/4 in.) framed: 161.9 x 81 cm (63 3/4 x 31 7/8 in.)"
+},
+{
+  "codice":"A2",
+  "titolo": "Apollo Pursuing Daphne",
+  "autore": "Giovanni Battista Tiepolo",
+  "immagine" : "sc747.jpg",
+  "tipo":"quadro",
+  "tecnica": "oil on canvas",
+  "dimensioni":"68.5 x 87 cm (26 15/16 x 34 1/4 in.) framed: 88.3 x 105.7 x 5.7 cm (34 3/4 x 41 5/8 x 2 1/4 in.)"
+},
+{
+  "codice":"A3",
+  "titolo": "Diana and Endymion",
+  "autore": "Jean-Honoré Fragonard",
+  "immagine" : "A31382.jpg",
+  "tipo":"quadro",
+  "tecnica": "oil on canvas",
+  "dimensioni":"94.9 x 136.8 cm (37 3/8 x 53 7/8 in.) framed: 125.1 x 168.3 cm (49 1/4 x 66 1/4 in.)"
+},
+{
+  "codice":"A4",
+  "titolo": "The Corinthian Maid",
+  "autore": "Joseph Wright",
+  "immagine" : "A13815.jpg",
+  "tipo":"quadro",
+  "tecnica": "oil on canvas",
+  "dimensioni":"106.3 x 130.8 cm (41 7/8 x 51 1/2 in.) framed: 135.9 x 158.8 x 8.2 cm (53 1/2 x 62 1/2 x 3 1/4 in.)"
+},
+{
+  "codice":"A5",
+  "titolo": "Diana and Endymion",
+  "autore": "Luca Giordano",
+  "immagine" : "A16852.jpg",
+  "tipo":"quadro",
+  "tecnica": "oil on canvas",
+  "dimensioni":" 149.2 x 164 cm (58 3/4 x 64 9/16 in.) framed: 170.2 x 185.4 x 9.2 cm (67 x 73 x 3 5/8 in.)"
+},
+{
+  "codice":"A6",
+  "titolo": "Jupiter Nourished by the Goat Amalthea",
+  "autore": "Jacob Jordaens",
+  "immagine" : "R-20111208-0008.jpg",
+  "tipo":"quadro",
+  "tecnica": "oil on canvas",
+  "dimensioni":"N/A"
+},
+{
+  "codice":"A7",
+  "titolo": "Three Goddesses: Minerva, Juno and Venus",
+  "autore": "Jan van der Straet",
+  "immagine" : "R-20111208-0008.jpg",
+  "tipo":"quadro",
+  "tecnica": "oil on canvas",
+  "dimensioni":"20 x 15.3 cm (7 7/8 x 6 in.) support: 29.6 x 24.1 cm (11 5/8 x 9 1/2 in.)"
+},
+{
+  "codice":"A8",
+  "titolo": "Neptune and the Pillars of Hercules",
+  "autore": "Willem Basse",
+  "immagine" : "R-20111115-0041.jpg",
+  "tipo":"quadro",
+  "tecnica": "etching and engraving on laid paper",
+  "dimensioni":"11.5 x 16.4 cm (4 1/2 x 6 7/16 in.) sheet: 12 x 17.9 cm (4 3/4 x 7 1/16 in.)"
+},
+{
+  "codice":"A9",
+  "titolo": "The White Cloud, Head Chief of the Iowas",
+  "autore": "George Catlin",
+  "immagine" : "A30080.jpg",
+  "tipo":"quadro",
+  "tecnica": "oil on canvas",
+  "dimensioni":"71 x 58 cm (27 15/16 x 22 13/16 in.)"
+},
+{
+  "codice":"A10",
+  "titolo": "Buffalo Lancing in the Snow Drifts - Sioux",
+  "autore": "George Catlin",
+  "immagine" : "C15897.jpg",
+  "tipo":"quadro",
+  "tecnica": "oil on canvas mounted on paperboard",
+  "dimensioni":"45.9 x 63.8 cm (18 1/16 x 25 1/8 in.)"
+},
+{
+  "codice":"A11",
+  "titolo": "Abraham Lincoln",
+  "autore": "Timothy Cole",
+  "immagine" : "R-20120829-0033.jpg",
+  "tipo":"quadro",
+  "tecnica": "wood engraving",
+  "dimensioni":"N/A"
+},
+{
+  "codice":"B1",
+  "titolo": "Empire Triumphant over Avarice",
+  "autore": "Adriaen de Vries",
+  "immagine" : "B19509.jpg",
+  "tipo":"statua",
+  "materiale":"bronze",
+  "dimensioni":"77.3 x 34.8 x 31.8 cm (30 7/16 x 13 11/16 x 12 1/2 in.)"
+},
+{
+  "codice":"B2",
+  "titolo": "Louis XIV",
+  "autore": "Martin Desjardins",
+  "immagine" : "G-007278-20130328.jpg",
+  "tipo":"statua",
+  "materiale":"bronze",
+  "dimensioni":"56.6 x 21.9 x 40 cm (22 5/16 x 8 5/8 x 15 3/4 in.) accessory size: 11.7 x 19.3 x 39.3 cm (4 5/8 x 7 5/8 x 15 1/2 in.) gross weight (sculpture): 33.000 lb gross weight (support): 10.000 lb"
+},
+{
+  "codice":"B3",
+  "titolo": "Louis XIV",
+  "autore": "Martin Desjardins",
+  "immagine" : "G-007278-20130328.jpg",
+  "tipo":"statua",
+  "materiale":"bronze",
+  "dimensioni":"56.6 x 21.9 x 40 cm (22 5/16 x 8 5/8 x 15 3/4 in.) accessory size: 11.7 x 19.3 x 39.3 cm (4 5/8 x 7 5/8 x 15 1/2 in.) gross weight (sculpture): 33.000 lb gross weight (support): 10.000 lb"
+},
+{
+  "codice":"B4",
+  "titolo": "Flemish",
+  "autore": "Jean-Pierre-Antoine Tassaert",
+  "immagine" : "sc006929.jpg",
+  "tipo":"statua",
+  "materiale":"marble",
+  "dimensioni":"98.3 x 87.2 x 63.8 cm (38 11/16 x 34 5/16 x 25 1/8 in.)"
+},
+{
+  "codice":"B5",
+  "titolo": "The Grand Dauphin",
+  "autore": "Martin Desjardins",
+  "immagine" : "G-007820-20131106.jpg",
+  "tipo":"statua",
+  "materiale":"bronze",
+  "dimensioni":"57 x 21.3 x 48 cm (22 7/16 x 8 3/8 x 18 7/8 in.) accessory size: 11.8 x 19.7 x 39.5 cm (4 5/8 x 7 3/4 x 15 9/16 in.) gross weight (sculpture): 31.000 lb gross weight (support): 11.000 lb"
+},
+{
+  "codice":"B6",
+  "titolo": "Lorenzo de' Medici",
+  "autore": "Andrea del Verrocchio and Orsino Benintendi",
+  "immagine" : "B10848.jpg",
+  "tipo":"statua",
+  "materiale":"painted terracotta",
+  "dimensioni":"65.8 x 59.1 x 32.7 cm (25 7/8 x 23 1/4 x 12 7/8 in.)"
+},
+{
+  "codice":"B7",
+  "titolo": "Jean-Baptiste Lemoyne II",
+  "autore": "Jules-David Cromot, Baron du Bourg",
+  "immagine" : "G-007167-20130404.jpg",
+  "tipo":"statua",
+  "materiale":"marble",
+  "dimensioni":"79.7 x 48.3 x 41.9 cm (31 3/8 x 19 x 16 1/2 in.) gross weight: 285 lb. (129.275 kg)"
+},
+{
+  "codice":"B8",
+  "titolo": "A Little Boy",
+  "autore": "Desiderio da Settignano",
+  "immagine" : "E10317.jpg",
+  "tipo":"statua",
+  "materiale":"marble",
+  "dimensioni":"26.3 x 24.7 x 15 cm (10 3/8 x 9 3/4 x 5 7/8 in.)"
+},
+{
+  "codice":"C1",
+  "titolo": "Milanese 15th Century",
+  "autore": "N/A",
+  "immagine" : "B-05788-030.jpg",
+  "tipo":"moneta",
+  "materiale":"silver testoon//Struck",
+  "dimensioni":"N/A"
+},
+{
+  "codice":"C2",
+  "titolo": "Pisanello",
+  "autore": "Vittorino de' Rambaldoni da Feltre",
+  "immagine" : "E10890.jpg",
+  "tipo":"moneta",
+  "materiale":"bronze",
+  "dimensioni":" (diameter): 6.7 cm (2 5/8 in.) gross weight: 113.22 gr (0.25 lb.) axis: 12:00"
+}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

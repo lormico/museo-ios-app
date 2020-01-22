@@ -12,6 +12,11 @@
 		1342D19F23D8479600C7802A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1342D19D23D8479600C7802A /* Main.storyboard */; };
 		1342D1A123D8479700C7802A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1342D1A023D8479700C7802A /* Assets.xcassets */; };
 		1342D1A423D8479700C7802A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1342D1A223D8479700C7802A /* LaunchScreen.storyboard */; };
+		1342D1AD23D8491E00C7802A /* Opera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1AC23D8491E00C7802A /* Opera.swift */; };
+		1342D1AF23D8495E00C7802A /* Quadro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1AE23D8495E00C7802A /* Quadro.swift */; };
+		1342D1B123D8496800C7802A /* Statua.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1B023D8496800C7802A /* Statua.swift */; };
+		1342D1B323D8540F00C7802A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1B223D8540F00C7802A /* TableViewController.swift */; };
+		1342D1B523D86B9E00C7802A /* gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D1B423D86B9E00C7802A /* gallery.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		1342D1A023D8479700C7802A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1342D1A323D8479700C7802A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1342D1A523D8479700C7802A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1342D1AC23D8491E00C7802A /* Opera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opera.swift; sourceTree = "<group>"; };
+		1342D1AE23D8495E00C7802A /* Quadro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quadro.swift; sourceTree = "<group>"; };
+		1342D1B023D8496800C7802A /* Statua.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statua.swift; sourceTree = "<group>"; };
+		1342D1B223D8540F00C7802A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1342D1B423D86B9E00C7802A /* gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gallery.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		1342D19823D8479600C7802A /* Museo */ = {
 			isa = PBXGroup;
 			children = (
+				1342D1B423D86B9E00C7802A /* gallery.json */,
+				1342D1AB23D848C100C7802A /* Model */,
 				1342D19923D8479600C7802A /* AppDelegate.swift */,
 				1342D19B23D8479600C7802A /* ViewController.swift */,
 				1342D19D23D8479600C7802A /* Main.storyboard */,
 				1342D1A023D8479700C7802A /* Assets.xcassets */,
 				1342D1A223D8479700C7802A /* LaunchScreen.storyboard */,
 				1342D1A523D8479700C7802A /* Info.plist */,
+				1342D1B223D8540F00C7802A /* TableViewController.swift */,
 			);
 			path = Museo;
+			sourceTree = "<group>";
+		};
+		1342D1AB23D848C100C7802A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1342D1AC23D8491E00C7802A /* Opera.swift */,
+				1342D1AE23D8495E00C7802A /* Quadro.swift */,
+				1342D1B023D8496800C7802A /* Statua.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1342D1B523D86B9E00C7802A /* gallery.json in Resources */,
 				1342D1A423D8479700C7802A /* LaunchScreen.storyboard in Resources */,
 				1342D1A123D8479700C7802A /* Assets.xcassets in Resources */,
 				1342D19F23D8479600C7802A /* Main.storyboard in Resources */,
@@ -135,8 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1342D1AD23D8491E00C7802A /* Opera.swift in Sources */,
+				1342D1B323D8540F00C7802A /* TableViewController.swift in Sources */,
+				1342D1B123D8496800C7802A /* Statua.swift in Sources */,
 				1342D19C23D8479600C7802A /* ViewController.swift in Sources */,
 				1342D19A23D8479600C7802A /* AppDelegate.swift in Sources */,
+				1342D1AF23D8495E00C7802A /* Quadro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +310,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Museo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.github.lormico.Museo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +330,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Museo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.github.lormico.Museo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
