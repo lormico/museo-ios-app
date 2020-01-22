@@ -33,16 +33,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     guard let codice = opera_obj["codice"] as? String else { continue }
                     guard let titolo = opera_obj["titolo"] as? String else { continue }
                     guard let autore = opera_obj["autore"] as? String else { continue }
+                    guard let immagine = opera_obj["immagine"] as? String else { continue }
                     
                     let opera: Opera
                     guard let tipo_opera = opera_obj["tipo"] as? String else { continue }
                     if tipo_opera == "quadro" {
                         guard let tecnica = opera_obj["tecnica"] as? String else { continue }
-                        opera = Quadro(codice: codice, titolo: titolo, autore: autore, esposto: true, tecnica: tecnica)
+                        opera = Quadro(codice: codice, titolo: titolo, autore: autore, esposto: true, immagine: immagine, tecnica: tecnica)
                         museo.append(opera)
                     } else if tipo_opera == "statua" {
                         guard let materiale = opera_obj["materiale"] as? String else { continue }
-                        opera = Statua(codice: codice, titolo: titolo, autore: autore, esposto: true, altezza: "TBD", materiale: materiale)
+                        opera = Statua(codice: codice, titolo: titolo, autore: autore, esposto: true, immagine: immagine, altezza: "TBD", materiale: materiale)
                         museo.append(opera)
                     }
 

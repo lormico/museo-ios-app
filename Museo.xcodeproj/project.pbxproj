@@ -16,6 +16,7 @@
 		1342D1AF23D8495E00C7802A /* Quadro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1AE23D8495E00C7802A /* Quadro.swift */; };
 		1342D1B123D8496800C7802A /* Statua.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1B023D8496800C7802A /* Statua.swift */; };
 		1342D1B523D86B9E00C7802A /* gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D1B423D86B9E00C7802A /* gallery.json */; };
+		1342D1B723D894A600C7802A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1B623D894A600C7802A /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1342D1AE23D8495E00C7802A /* Quadro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quadro.swift; sourceTree = "<group>"; };
 		1342D1B023D8496800C7802A /* Statua.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statua.swift; sourceTree = "<group>"; };
 		1342D1B423D86B9E00C7802A /* gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gallery.json; sourceTree = "<group>"; };
+		1342D1B623D894A600C7802A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				1342D19923D8479600C7802A /* AppDelegate.swift */,
 				1342D19B23D8479600C7802A /* ViewController.swift */,
 				1342D19D23D8479600C7802A /* Main.storyboard */,
+				1342D1B623D894A600C7802A /* TableViewCell.swift */,
 				1342D1A023D8479700C7802A /* Assets.xcassets */,
 				1342D1A223D8479700C7802A /* LaunchScreen.storyboard */,
 				1342D1A523D8479700C7802A /* Info.plist */,
@@ -159,6 +162,7 @@
 				1342D1AD23D8491E00C7802A /* Opera.swift in Sources */,
 				1342D1B123D8496800C7802A /* Statua.swift in Sources */,
 				1342D19C23D8479600C7802A /* ViewController.swift in Sources */,
+				1342D1B723D894A600C7802A /* TableViewCell.swift in Sources */,
 				1342D19A23D8479600C7802A /* AppDelegate.swift in Sources */,
 				1342D1AF23D8495E00C7802A /* Quadro.swift in Sources */,
 			);

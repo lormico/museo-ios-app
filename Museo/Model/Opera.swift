@@ -14,12 +14,14 @@ class Opera {
     let titolo: String
     let autore: String
     var esposto: Bool
+    var immagine: String
     
-    init(codice: String, titolo: String, autore: String, esposto: Bool) {
+    init(codice: String, titolo: String, autore: String, esposto: Bool, immagine: String) {
         self.codice = codice
         self.titolo = titolo
         self.autore = autore
         self.esposto = esposto
+        self.immagine = immagine
     }
     
 }

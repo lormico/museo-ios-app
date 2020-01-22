@@ -25,12 +25,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Parte del datasource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Scoda la cella se già esiste, sennò inizializza una nuova cella
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as? TableViewCell
         
-        cell.textLabel?.text = museo[indexPath.row].titolo
-        cell.detailTextLabel?.text = museo[indexPath.row].autore
+        cell?.titolo.text = museo[indexPath.row].titolo
+        cell?.autore.text = museo[indexPath.row].autore
+        cell?.extra.text = museo[indexPath.row].codice
+        cell?.immagine.image = UIImage(named: museo[indexPath.row].immagine)
         
-        return cell
+        return cell!
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
