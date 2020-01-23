@@ -18,6 +18,9 @@
 		1342D1B523D86B9E00C7802A /* gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D1B423D86B9E00C7802A /* gallery.json */; };
 		1342D1B723D894A600C7802A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D1B623D894A600C7802A /* TableViewCell.swift */; };
 		138BA1B023D9B31F00C42FF3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BA1AF23D9B31F00C42FF3 /* DetailViewController.swift */; };
+		138BA1B223D9DA7D00C42FF3 /* Museo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BA1B123D9DA7D00C42FF3 /* Museo.swift */; };
+		138BA1B423D9DAC300C42FF3 /* DAOMuseo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BA1B323D9DAC300C42FF3 /* DAOMuseo.swift */; };
+		138BA1B623D9DDD900C42FF3 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BA1B523D9DDD900C42FF3 /* Provider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		1342D1B423D86B9E00C7802A /* gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gallery.json; sourceTree = "<group>"; };
 		1342D1B623D894A600C7802A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		138BA1AF23D9B31F00C42FF3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		138BA1B123D9DA7D00C42FF3 /* Museo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Museo.swift; sourceTree = "<group>"; };
+		138BA1B323D9DAC300C42FF3 /* DAOMuseo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOMuseo.swift; sourceTree = "<group>"; };
+		138BA1B523D9DDD900C42FF3 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				1342D1AC23D8491E00C7802A /* Opera.swift */,
 				1342D1AE23D8495E00C7802A /* Quadro.swift */,
 				1342D1B023D8496800C7802A /* Statua.swift */,
+				138BA1B123D9DA7D00C42FF3 /* Museo.swift */,
+				138BA1B323D9DAC300C42FF3 /* DAOMuseo.swift */,
+				138BA1B523D9DDD900C42FF3 /* Provider.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,7 +177,10 @@
 				1342D1B723D894A600C7802A /* TableViewCell.swift in Sources */,
 				1342D19A23D8479600C7802A /* AppDelegate.swift in Sources */,
 				1342D1AF23D8495E00C7802A /* Quadro.swift in Sources */,
+				138BA1B423D9DAC300C42FF3 /* DAOMuseo.swift in Sources */,
 				138BA1B023D9B31F00C42FF3 /* DetailViewController.swift in Sources */,
+				138BA1B623D9DDD900C42FF3 /* Provider.swift in Sources */,
+				138BA1B223D9DA7D00C42FF3 /* Museo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

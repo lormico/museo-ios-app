@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var museo: [Opera] = []
+    var museo: Museo = Provider.shared.museo
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,8 +18,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let delegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate // as mi fa la conversione (! conversione unwrapped)
-        museo = delegate.museo
     }
 
     // Parte del datasource
@@ -27,20 +25,39 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Scoda la cella se già esiste, sennò inizializza una nuova cella
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as? TableViewCell
         
-        cell?.titolo.text = museo[indexPath.row].titolo
-        cell?.autore.text = museo[indexPath.row].autore
-        cell?.extra.text = museo[indexPath.row].codice
-        cell?.immagine.image = UIImage(named: museo[indexPath.row].immagine)
+        var opera: Opera
+        if indexPath.section == 0 {
+            opera = museo.getOperaSala(indexPath.row)
+        } else {
+            opera = museo.getOperaDeposito(indexPath.row)
+        }
+        
+        cell?.titolo.text = opera.titolo
+        cell?.autore.text = opera.autore
+        cell?.extra.text = opera.codice
+        cell?.immagine.image = UIImage(named: opera.immagine)
         
         return cell!
     }
 
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Sala"
+        } else {
+            return "Deposito"
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return museo.count
+        if section == 0 {
+            return museo.dimSala()
+        } else {
+            return museo.dimDeposito()
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -52,7 +69,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "dettaglioOperaSegue" {
             let indice = (tableView.indexPathForSelectedRow?.row)!
-            let opera = museo[indice]
+            let sezione = (tableView.indexPathForSelectedRow?.section)!
+            
+            var opera: Opera
+            if sezione == 0 {
+                opera = museo.getOperaSala(indice)
+            } else {
+                opera = museo.getOperaDeposito(indice)
+            }
             
             if let detailView = segue.destination as? DetailViewController {
                 detailView.opera = opera
