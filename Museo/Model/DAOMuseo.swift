@@ -36,18 +36,18 @@ class DAOMuseo {
                     guard let tipo_opera = opera_obj["tipo"] as? String else { continue }
                     if tipo_opera == "quadro" {
                         guard let tecnica = opera_obj["tecnica"] as? String else { continue }
-                        opera = Quadro(codice: codice, titolo: titolo, autore: autore, esposto: true, immagine: immagine, dimensioni: dimensioni, tecnica: tecnica)
+                        opera = Quadro(codice: codice, titolo: titolo, autore: autore, esposto: false, immagine: immagine, dimensioni: dimensioni, tecnica: tecnica)
                         listaOpere.append(opera)
                     } else if tipo_opera == "statua" {
                         guard let materiale = opera_obj["materiale"] as? String else { continue }
-                        opera = Statua(codice: codice, titolo: titolo, autore: autore, esposto: true, immagine: immagine, dimensioni: dimensioni, materiale: materiale)
+                        opera = Statua(codice: codice, titolo: titolo, autore: autore, esposto: false, immagine: immagine, dimensioni: dimensioni, materiale: materiale)
                         listaOpere.append(opera)
                     }
                     
                 }
                 
             } else {
-                print("ERRORONE! File inesistente")
+                print("ERRORE! File inesistente")
             }
         } catch {
             print("ECCEZIONE!")
