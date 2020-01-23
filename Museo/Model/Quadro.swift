@@ -12,8 +12,8 @@ class Quadro: Opera {
     
     let tecnica: String
     
-    init(codice: String, titolo: String, autore: String, esposto: Bool, immagine: String, tecnica: String) {
+    init(codice: String, titolo: String, autore: String, esposto: Bool, immagine: String, dimensioni: String, tecnica: String) {
         self.tecnica = tecnica
-        super.init(codice: codice, titolo: titolo, autore: autore, esposto: esposto, immagine: immagine)
+        super.init(codice: codice, titolo: titolo, autore: autore, esposto: esposto, immagine: immagine, dimensioni: dimensioni)
     }
 }

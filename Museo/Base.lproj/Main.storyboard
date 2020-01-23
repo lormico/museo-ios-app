@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cvo-E9-cuZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Lista Opere-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Museo" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,6 +62,7 @@
                                             <outlet property="extra" destination="pAE-yC-zQe" id="yAv-Gx-LOt"/>
                                             <outlet property="immagine" destination="epA-6o-nV7" id="s6x-Xv-x4z"/>
                                             <outlet property="titolo" destination="wgl-Ee-mN9" id="17X-gS-DfA"/>
+                                            <segue destination="Exh-Mq-6Xn" kind="show" identifier="dettaglioOperaSegue" id="t4B-G0-Mt0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -74,13 +75,105 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Lista Opere" id="ga0-8z-WEH"/>
                     <connections>
                         <outlet property="tableView" destination="2BL-La-xtu" id="DCP-5Q-vns"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1940" y="71.514242878560722"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oFU-u0-kpN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cvo-E9-cuZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Nb-SU-KIM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KLW-CL-7TX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRt-nH-pO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1000.8" y="71.514242878560722"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Osr-cX-Qmh">
+            <objects>
+                <viewController id="Exh-Mq-6Xn" customClass="DetailViewController" customModule="Museo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BSy-ze-F48">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nc8-uS-QHb">
+                                <rect key="frame" x="16" y="79" width="344" height="260"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Titolo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heZ-5m-M8J">
+                                <rect key="frame" x="30" y="302" width="43" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="s4n-Zn-EIg">
+                                <rect key="frame" x="30" y="336" width="71" height="151"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jme-xA-7aK">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Materiale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxg-ER-SsW">
+                                        <rect key="frame" x="0.0" y="43.5" width="71" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altezza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJi-AZ-eSp">
+                                        <rect key="frame" x="0.0" y="87" width="56.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esposta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZe-FK-idr">
+                                        <rect key="frame" x="0.0" y="130.5" width="61.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s4n-Zn-EIg" firstAttribute="leading" secondItem="gA8-fm-u0n" secondAttribute="leading" constant="30" id="0eq-oS-Ner"/>
+                            <constraint firstItem="nc8-uS-QHb" firstAttribute="centerX" secondItem="gA8-fm-u0n" secondAttribute="centerX" id="FZd-uW-nmW"/>
+                            <constraint firstItem="nc8-uS-QHb" firstAttribute="leading" secondItem="gA8-fm-u0n" secondAttribute="leading" constant="15" id="RSo-Qf-ca0"/>
+                            <constraint firstItem="heZ-5m-M8J" firstAttribute="top" secondItem="nc8-uS-QHb" secondAttribute="bottom" constant="20" id="W3x-P2-xss"/>
+                            <constraint firstItem="s4n-Zn-EIg" firstAttribute="top" secondItem="heZ-5m-M8J" secondAttribute="bottom" constant="20" id="XFh-sL-zyb"/>
+                            <constraint firstItem="gA8-fm-u0n" firstAttribute="trailing" secondItem="nc8-uS-QHb" secondAttribute="trailing" constant="15" id="f40-zb-QnT"/>
+                            <constraint firstItem="nc8-uS-QHb" firstAttribute="top" secondItem="gA8-fm-u0n" secondAttribute="top" constant="15" id="jKP-V3-Gh7"/>
+                            <constraint firstItem="heZ-5m-M8J" firstAttribute="leading" secondItem="gA8-fm-u0n" secondAttribute="leading" constant="30" id="ln1-nb-fNX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gA8-fm-u0n"/>
+                    </view>
+                    <connections>
+                        <outlet property="altezza" destination="ZJi-AZ-eSp" id="cYl-Fv-cWc"/>
+                        <outlet property="autore" destination="jme-xA-7aK" id="Rlv-u0-x0Q"/>
+                        <outlet property="esposta" destination="ZZe-FK-idr" id="TZx-wS-8bM"/>
+                        <outlet property="immagine" destination="nc8-uS-QHb" id="lR3-ME-z6x"/>
+                        <outlet property="materiale" destination="zxg-ER-SsW" id="2vp-bs-VLT"/>
+                        <outlet property="titolo" destination="heZ-5m-M8J" id="gIh-bx-Z2x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O49-xI-ZI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2901.5999999999999" y="71.514242878560722"/>
         </scene>
     </scenes>
 </document>

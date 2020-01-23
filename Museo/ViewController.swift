@@ -48,5 +48,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    // Prepara la schermata successiva
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "dettaglioOperaSegue" {
+            let indice = (tableView.indexPathForSelectedRow?.row)!
+            let opera = museo[indice]
+            
+            if let detailView = segue.destination as? DetailViewController {
+                detailView.opera = opera
+            }
+        }
+    }
 }
 

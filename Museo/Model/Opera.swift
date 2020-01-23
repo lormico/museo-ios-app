@@ -15,13 +15,15 @@ class Opera {
     let autore: String
     var esposto: Bool
     var immagine: String
+    let dimensioni: String
     
-    init(codice: String, titolo: String, autore: String, esposto: Bool, immagine: String) {
+    init(codice: String, titolo: String, autore: String, esposto: Bool, immagine: String, dimensioni: String) {
         self.codice = codice
         self.titolo = titolo
         self.autore = autore
         self.esposto = esposto
         self.immagine = immagine
+        self.dimensioni = dimensioni
     }
     
 }
