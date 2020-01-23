@@ -18,8 +18,46 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Registro il long press
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.longPressGestureRecognized(gestureRecognizer: )))
+        tableView.addGestureRecognizer(longPress)
     }
 
+    @objc func longPressGestureRecognized(gestureRecognizer: UIGestureRecognizer) {
+        let optionMenu = UIAlertController(title: nil, message: "Cosa vuoi fare?", preferredStyle: .actionSheet)
+        let annullaOpzione = UIAlertAction(title: "Annulla", style: .cancel, handler: nil)
+        optionMenu.addAction(annullaOpzione)
+        
+        // Costruisco l'handler, è una variabile contenente una funzione anonima
+        let longPress = gestureRecognizer as! UILongPressGestureRecognizer
+        let locationInView = longPress.location(in: tableView)
+        let index = tableView.indexPathForRow(at: locationInView)
+        let callActionHandler = { (action: UIAlertAction) -> Void in
+            print("Selezionato l'elemento \(index!.row)")
+            if index!.section == 0 {
+                self.museo.moveOperaToDeposito(index!.row)
+            } else {
+                self.museo.moveOperaToSala(index!.row)
+            }
+            self.tableView?.reloadData()
+            self.tableView?.reloadSections([0,1], with: .fade)
+        }
+        
+        let sezioneString: String
+        if index!.section == 0 {
+            sezioneString = "nel deposito"
+        } else {
+            sezioneString = "nella sala"
+        }
+        
+        let moveOpzione = UIAlertAction(title: "Sposta \(sezioneString)", style: .default, handler: callActionHandler)
+        optionMenu.addAction(moveOpzione)
+        
+        self.present(optionMenu, animated: true, completion: nil)
+    }
+    
+    
     // Parte del datasource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Scoda la cella se già esiste, sennò inizializza una nuova cella
