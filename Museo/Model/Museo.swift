@@ -41,12 +41,16 @@ class Museo {
     }
     
     func moveOperaToSala(_ i: Int) {
-        self.sala.append(getOperaDeposito(i))
+        let opera = getOperaDeposito(i)
+        opera.esposto = true
+        self.sala.append(opera)
         self.deposito.remove(at: i)
     }
     
     func moveOperaToDeposito(_ i: Int) {
-        self.deposito.append(getOperaSala(i))
+        let opera = getOperaSala(i)
+        opera.esposto = false
+        self.deposito.append(opera)
         self.sala.remove(at: i)
     }
     

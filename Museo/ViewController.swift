@@ -26,6 +26,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @objc func longPressGestureRecognized(gestureRecognizer: UIGestureRecognizer) {
         let optionMenu = UIAlertController(title: nil, message: "Cosa vuoi fare?", preferredStyle: .actionSheet)
+        
+        // Opzione annulla, è un'entry separata nel menu a popup UIAlertController
         let annullaOpzione = UIAlertAction(title: "Annulla", style: .cancel, handler: nil)
         optionMenu.addAction(annullaOpzione)
         
@@ -35,17 +37,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let index = tableView.indexPathForRow(at: locationInView)
         let callActionHandler = { (action: UIAlertAction) -> Void in
             print("Selezionato l'elemento \(index!.row)")
-            if index!.section == 0 {
+            if index?.section == 0 {
                 self.museo.moveOperaToDeposito(index!.row)
             } else {
                 self.museo.moveOperaToSala(index!.row)
             }
             self.tableView?.reloadData()
-            self.tableView?.reloadSections([0,1], with: .fade)
+            self.tableView?.reloadSections([0,1], with: .fade) // Non dovrebbe essere necessario, bug del simulatore?
         }
         
         let sezioneString: String
-        if index!.section == 0 {
+        if index?.section == 0 {
             sezioneString = "nel deposito"
         } else {
             sezioneString = "nella sala"
