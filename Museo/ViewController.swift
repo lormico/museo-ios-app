@@ -19,6 +19,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let completionHandler: (Data?, URLResponse?, Error?) -> Void = { (data, response, error) in
+            guard let _: Data = data, let _: URLResponse = response, error == nil else { return }
+            DispatchQueue.main.async {
+                let opere = DAOMuseo().caricaJson(data!)
+                Provider.shared.museo.setDeposito(listaOpere: opere)
+                self.tableView.reloadData()
+            }
+        }
+        
+        DAOMuseo().readHttp(completionHandler: completionHandler)
+        
         // Registro il long press
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.longPressGestureRecognized(gestureRecognizer: )))
         tableView.addGestureRecognizer(longPress)
@@ -57,7 +68,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.present(alertMessage, animated: true, completion: nil)
             
             self.tableView?.reloadData()
-            self.tableView?.reloadSections([0,1], with: .fade) // Non dovrebbe essere necessario, bug del simulatore?
         }
         
         let sezioneString: String

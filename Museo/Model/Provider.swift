@@ -16,8 +16,6 @@ class Provider {
     
     private init() {
         museo = Museo(nomeMuseo: "Van Goghenheim", dimensioneSala: 2)
-        let daoMuseo = DAOMuseo()
-        museo.setDeposito(listaOpere: daoMuseo.caricaJson())
     }
     
 }
