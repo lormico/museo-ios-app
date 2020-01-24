@@ -40,7 +40,10 @@ class Museo {
         return deposito[i]
     }
     
-    func moveOperaToSala(_ i: Int) {
+    func moveOperaToSala(_ i: Int) throws {
+        if self.sala.count >= self.maxDimensioneSala {
+            throw NSError(domain: "", code: 0, userInfo: [:])
+        }
         let opera = getOperaDeposito(i)
         opera.esposto = true
         self.sala.append(opera)

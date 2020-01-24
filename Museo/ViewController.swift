@@ -37,11 +37,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let index = tableView.indexPathForRow(at: locationInView)
         let callActionHandler = { (action: UIAlertAction) -> Void in
             print("Selezionato l'elemento \(index!.row)")
+            
+            var intestazione: String = "Successo"
+            var messaggio: String = "Elemento spostato con successo"
+            
             if index?.section == 0 {
                 self.museo.moveOperaToDeposito(index!.row)
             } else {
-                self.museo.moveOperaToSala(index!.row)
+                do {
+                    try self.museo.moveOperaToSala(index!.row)
+                } catch {
+                    intestazione = "Errore"
+                    messaggio = "Sala piena, opera non spostata"
+                }
             }
+            
+            let alertMessage = UIAlertController(title: intestazione, message: messaggio, preferredStyle: .alert)
+            alertMessage.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alertMessage, animated: true, completion: nil)
+            
             self.tableView?.reloadData()
             self.tableView?.reloadSections([0,1], with: .fade) // Non dovrebbe essere necessario, bug del simulatore?
         }

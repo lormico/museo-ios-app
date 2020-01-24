@@ -15,7 +15,7 @@ class Provider {
     static let shared = Provider() // Fa in modo che sia Singleton
     
     private init() {
-        museo = Museo(nomeMuseo: "Van Goghenheim", dimensioneSala: 10)
+        museo = Museo(nomeMuseo: "Van Goghenheim", dimensioneSala: 2)
         let daoMuseo = DAOMuseo()
         museo.setDeposito(listaOpere: daoMuseo.caricaJson())
     }
